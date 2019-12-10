@@ -1,0 +1,20 @@
+{
+  "name": "janethl/twilio-project-two",
+  "timeout": 20000,
+  "version": "0.0.0",
+  "description": "",
+  "events": [
+    {
+      "twilio.sms.received": {
+        "filename": "events/twilio/sms/received",
+        "subtype": null
+      }
+    },
+    {
+      "twilio.sms.received": {
+        "filename": "events/twilio/sms/log",
+        "subtype": null
+      }
+    }
+  ]
+}
