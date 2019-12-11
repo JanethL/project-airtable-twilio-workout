@@ -1,9 +1,11 @@
-const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+const lib = require('lib')({
+  token: process.env.STDLIB_SECRET_TOKEN
+});
 /**
-* An HTTP endpoint that acts as a webhook for Twilio sms.received event
-* @param {object} event
-* @returns {object} result The result of your workflow steps
-*/
+ * An HTTP endpoint that acts as a webhook for Twilio sms.received event
+ * @param {object} event
+ * @returns {object} result The result of your workflow steps
+ */
 module.exports = async (event) => {
   let [day, exercise, notes, date] = event.Body.split(',')
   if (!exercise || !notes) {
@@ -17,7 +19,7 @@ module.exports = async (event) => {
   // [Workflow Step 1]
 
   console.log(`Running airtable.query[@0.4.2].insert()...`);
-  
+
   console.log(day, exercise, notes)
   if (!notes) {
     return;
@@ -26,16 +28,22 @@ module.exports = async (event) => {
   result.step1 = {};
   result.step1.insertQueryResults = await lib.airtable.query['@0.4.2'].update({
     table: `Workout`,
-    where: [
-      {
-        Day: Number(day),
-        'Exercise__icontains': exercise.trim()
-      }
-    ],
+    where: [{
+      Day: Number(day),
+      'Exercise__icontains': exercise.trim()
+    }],
     fields: {
-        'Notes': notes,
+      'Notes': notes,
     },
     typecast: null
   });
+
+  await lib.twilio.messages['@0.1.0'].create({
+    from: null,
+    to: `${event.From}`,
+    body: `Your exercise has been logged! Keep at it 💪🏽`,
+    mediaUrl: null
+  });
+
   return result;
 };
