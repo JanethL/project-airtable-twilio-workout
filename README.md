@@ -90,8 +90,41 @@ You'll need to click the **Link Resource** button to the right of **Airtable…*
 
 <img src= "https://cdn-images-1.medium.com/max/1600/1*b-4GAor4KNwR36aTExVyhg.png" width="400">
 
-On the following page, you'll see an option to **Link Resource**. Click it to proceed.
+Input a name that you'll associate with your Airtable account for future workflows you'll create. I'd suggest inputting the email you used when signing up for Airtable. Next, follow the instructions to retrieve your Airtables API key.
 
+<img src= "https://cdn-images-1.medium.com/max/1600/1*l3NaQEDTUi9Rk5VYR8uwUA.png" width="400">
+
+Select the blue **"Finish"** button.
+
+Find and Select the table titled **" 💪 Personal Gym App" and click "Finish".**
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*MwgU0t0RhPRyU9onFzmcbw.png" width="400">
+
+Congrats! You're done linking Airtable. Next, you'll want to click the "Link Resource" button to the right of Twilio…
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*1QBMdj3bKL2-Qa0iu82Syg.png" width="400">
+
+Click **"Link New Resource"** to start the [Twilio Connect flow](https://support.twilio.com/hc/en-us/articles/223135007-What-is-Twilio-Connect-). You'll need to log into Twilio, or create an account if you don't have one.
+
+While Twilio offers a **free** account and a **free** Trial number, you're required to upgrade to connect your Twilio number to third-party apps. When you [upgrade](https://support.twilio.com/hc/en-us/articles/360006956594-Twilio-Third-Party-Application-and-Product-Support?_ga=2.101194177.1570860565.1575656764-1537879910.1573753850), Twilio will request that you add your credit card and will top your balance at $20. Twilio will deduct $0.0075 for every message you send.
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*HosxabLAC5ODIK7BkzCttA.png" width="400">
+
+Once you're logged in, you'll be asked to pick a phone number to associate with your workflow:
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*w_iulfxC5Fzfa7C0SuBgug.png" width="400">
+
+**Note**: If you already have a Twilio account and own a few numbers, they won't appear under "**Numbers you own."** When you authorized with the Standard Libary Twilio connect app, a new sub-account was created within your Twilio account. When you purchase a number from the above screen, it will be available on the sub-account, but **not** to your main account. You can read more about how [Twilio Connect apps work here](https://support.twilio.com/hc/en-us/articles/223135007-What-is-Twilio-Connect-).
+
+After you choose a number and click **"Finish,"** you'll be brought back to the **Identity Management** screen:
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*DnZuY_C3xxjxTd73jwymyQ.png" width="400">
+
+And just like that, we're done with the authentication process! We no longer have to spend hours reading over docs to figure out how to authenticate into each third-party API, Standard Library has stream-lined the process of building an intricate application that connects multiple API accounts. 🙌🏼
+
+We can now click **"Deploy Project"** to ship the code that powers our fitness tracking app to Standard Library.
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*Zwdr6KIFVXmRkjinCWNBkQ.png" width="400">
 
 # Making Changes
 
