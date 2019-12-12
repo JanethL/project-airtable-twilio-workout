@@ -34,7 +34,7 @@ You'll log notes for every exercise by texting back the Day #, Excercise, Notes,
 1. [Acknowledgements](#acknowledgements)
 
 # How It Works
-This application sets up a simple webhook response to events on Twilio and then makes requests to Airtable's APIs. Standard Library's platform automatically handles webhook signing, routing, and authentication.
+This application sets up webhooks that trigger in response to SMS messages sent to a Twilio phone number and makes requests to Airtable's APIs. Standard Library's platform automatically handles webhook signing, routing, and authentication.
 
 The stdlib.json file contained in this repository automatically tells Standard Library to configure the webhook routing, and sets a webhook timeout.
 
@@ -74,6 +74,8 @@ To get you set up faster, I'll share my Airtable base for a 12-week workout plan
 This Airtable is organized by grouping Days in Field 1. For each day, there are 5 to 6 exercises. 
 You'll also notice a field titled "Notes", this is where your notes will log after completing every exercise. 
 Now that you've copied my base, you're ready to deploy the code that will power your workflow. 
+
+To deploy your Airtable + Twilio workflow to Standard Library, click this "Deploy" button:
 
 [<img src="https://deploy.stdlib.com/static/images/deploy.svg" width="192">](https://deploy.stdlib.com/)
 
