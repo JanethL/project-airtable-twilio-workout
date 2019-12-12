@@ -64,7 +64,7 @@ The file `/functions/events/twilio/sms/log.js`also exports a webhook that trigge
 
 To get you set up faster, I'll share my Airtable base for a 12-week workout plan. After you complete this tutorial, you can modify the fields and workouts to your liking. For now, I'd recommend you continue following along. Once you log in to Airtable, copy my Airtable base by clicking this link: https://airtable.com/addBaseFromShare/shro85XYtmV0cU09V
 
-<img src= "https://cdn-images-1.medium.com/max/1440/1*WwclEHI2sy6hH_Leu2RVdw.png" width="500">
+<img src= "https://cdn-images-1.medium.com/max/1440/1*WwclEHI2sy6hH_Leu2RVdw.png" width="400">
 
 This Airtable is organized by grouping Days in Field 1. For each day, there are 5 to 6 exercises. 
 You'll also notice a field titled "Notes", this is where your notes will log after completing every exercise. 
@@ -72,9 +72,25 @@ Now that you've copied my base, you're ready to deploy the code that will power 
 
 [<img src="https://deploy.stdlib.com/static/images/deploy.svg" width="192">](https://deploy.stdlib.com/)
 
-On the following page, you'll see an option to **Link Resource**. Click it to
-proceed.
+You will be prompted to sign up (or login) to Standard Library at this stage. Once signed in you'll see a page like this:
 
+<img src= "https://cdn-images-1.medium.com/max/1600/1*BUX8gQw4_PeByiuicbMsSA.png" width="400">
+
+The `Events` table describes the events that kick off your workflow and the API endpoints that respond to events. For this project notice how we have two events here. The first **sms.received** event on Twilio sets off the Airtable API that selects all rows in Airtable matching the number you requested and will return Airtable fields via Twilio's API that sends a message. 
+
+The second **sms.received** event triggers anytime you text your Twilio number to log a workout.  When your number receives a  text as a string separated by commas ("day, exercise, notes"), it will interpret your text and run the Airtable API that allows you to update rows by querying a base.
+
+Next, we'll need to link our Airtable and Twilio accounts to a [Standard Library Identity](https://docs.stdlib.com/identity-management-sso-for-apis/what-is-an-identity-token/).
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*pJfnk31tcd4l0A_xmhyvPA.png" width="400">
+
+Standard Library provides [Identity Tokens](https://docs.stdlib.com/identity-management-sso-for-apis/what-is-an-identity-token/) that securely store and manage credentials to third party APIs. Once you've linked your accounts to a Token, you'll be able to listen for events, access your API's resources to create workflows.
+
+You'll need to click the **Link Resource** button to the right of **Airtable…**
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*b-4GAor4KNwR36aTExVyhg.png" width="400">
+
+On the following page, you'll see an option to **Link Resource**. Click it to proceed.
 
 
 # Making Changes
