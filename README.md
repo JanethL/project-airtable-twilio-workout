@@ -1,5 +1,7 @@
 # Build a Fitness Planner + Tracker with Airtable and Twilio
 
+[<img src="https://deploy.stdlib.com/static/images/deploy.svg" width="192">](https://deploy.stdlib.com/)
+
 A measurable fitness goal and a tracking tool will keep you accountable, motivated, and help you push your limits. Perhaps your fitness goal is to be stronger; you'll need to have a workout plan and gradually increase the number of sets, repetitions, and weight for each exercise.
 
 In this guide, you'll learn how to set up a workflow to retrieve and log your workouts via text using Twilio and Airtable APIs. 
