@@ -26,6 +26,8 @@ You'll log notes for every exercise by texting back the Day #, Excercise, Notes,
 1. [Installation](#installation)
 1. [Test Your Workflow](#test-your-workflow)
 1. [Making Changes](#making-changes)
+   1. [via Web Browser](#via-web-browser)
+   1. [via Command Line](#via-command-line)
 1. [Support](#support)
 1. [Acknowledgements](#acknowledgements)
 
@@ -129,7 +131,48 @@ We can now click **"Deploy Project"** to ship the code that powers our fitness t
 
 # Test Your Workflow
 
+Test the first part of your workflow by texting your Twilio number *"1",* If you set everything correctly, you will receive a text similar to this:
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*ROZ6E6FpMn9FPAkpfM9pNA.jpeg" width="400">
+
+To log notes after completing every exercise, text back the **day, exercise, and notes** you'd like to log. For Example:
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*_1rOm5rCoKsTTOuYw9hZkQ.png" width="400">
+
+When you text back the day, exercise, notes, your notes should successfully log in to your airtable base:
+
+
+<img src= "https://cdn-images-1.medium.com/max/1600/1*WwclEHI2sy6hH_Leu2RVdw.png" width="400">
+
 # Making Changes
+
+There are two ways to modify your application. The first is via our in-browser
+editor, [Code on Standard Library](https://code.stdlib.com/). The second is
+via the [Standard Library CLI](https://github.com/stdlib/lib).
+
+## via Web Browser
+
+Simply visit [`code.stdlib.com`](https://code.stdlib.com) and pick your project
+from the left sidebar. You can easily make updates and changes this way, and
+deploy directly from your browser.
+
+## via Command Line
+
+You can either export your project via tarball by right-clicking the project
+once open on [Code on Standard Library](https://code.stdlib.com/). You can then
+install the CLI tools from [stdlib/lib](https://github.com/stdlib/lib) to test,
+makes changes, and deploy.
+
+```shell
+# Deploy to dev environment
+lib up dev
+```
+
+Alternatively, you can retrieve your package via `lib get`...
+
+```shell
+lib get <username>/<project-name>@dev
+```
 
 # Support
 
