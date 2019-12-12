@@ -176,6 +176,20 @@ Alternatively, you can retrieve your package via `lib get`...
 lib get <username>/<project-name>@dev
 ```
 
+# Shipping to Production
+
+Standard Library has easy dev / prod environment management, if you'd like to ship to production,
+visit [`build.stdlib.com/projects`](https://build.stdlib.com/projects),
+find your project and select it.
+
+From the environment management screen, simply click **Ship Release**.
+
+<img src="https://ibb.co/BcSqjPG" width="400">
+
+You'll be asked to link a new account, but it will remove the message when
+in production.
+
+
 # Support
 
 Via Slack: [`libdev.slack.com`](https://libdev.slack.com/)
