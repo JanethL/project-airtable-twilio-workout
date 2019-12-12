@@ -184,11 +184,11 @@ find your project and select it.
 
 From the environment management screen, simply click **Ship Release**.
 
-<img src="https://ibb.co/BcSqjPG" width="400">
+<img src="https://cdn-images-1.medium.com/max/1440/1*JqiwC6a_zbIdTsww1BOYLQ.png" width="400">
 
-You'll be asked to link a new account, but it will remove the message when
-in production.
+Link any necessary resources, specify the version of the release and click **Create Release** to proceed. 
 
+That's all you need to do!
 
 # Support
 
