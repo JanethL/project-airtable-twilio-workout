@@ -4,7 +4,7 @@ A measurable fitness goal and a tracking tool will keep you accountable, motivat
 
 In this guide, you'll learn how to set up a workflow to retrieve and log your workouts via text using Twilio and Airtable APIs. 
 
-[<img src="https://media.giphy.com/media/SSiYuAc1jQj0NZ915l/giphy.gif" width="250">]
+<img src="https://media.giphy.com/media/SSiYuAc1jQj0NZ915l/giphy.gif" width="250">
 
 The workflow will run on [Standard Library](https://stdlib.com), a
 free-to-use API and workflow hosting platform, **powered by Node.js**, that will
