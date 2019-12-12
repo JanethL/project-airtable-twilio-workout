@@ -24,6 +24,7 @@ You'll log notes for every exercise by texting back the Day #, Excercise, Notes,
 
 1. [How It Works](#how-it-works)
 1. [Installation](#installation)
+1. [Test Your Workflow](#test-your-workflow)
 1. [Making Changes](#making-changes)
 1. [Support](#support)
 1. [Acknowledgements](#acknowledgements)
@@ -126,10 +127,25 @@ We can now click **"Deploy Project"** to ship the code that powers our fitness t
 
 <img src= "https://cdn-images-1.medium.com/max/1600/1*Zwdr6KIFVXmRkjinCWNBkQ.png" width="400">
 
-# Making Changes
+# Test Your Workflow
 
-# Shipping to Production
+# Making Changes
 
 # Support
 
+Via Slack: [`libdev.slack.com`](https://libdev.slack.com/)
+
+You can request an invitation by clicking `Community > Slack` in the top bar
+on [`https://stdlib.com`](https://stdlib.com).
+
+Via Twitter: [@StdLibHQ](https://twitter.com/StdLibHQ)
+
+Via E-mail: [support@stdlib.com](mailto:support@stdlib.com)
+
 # Acknowledgements
+
+Thanks to the Standard Library team and community for all the support!
+
+Keep up to date with platform changes on our [Blog](https://stdlib.com/blog).
+
+Happy hacking!
