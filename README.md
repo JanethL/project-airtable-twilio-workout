@@ -133,11 +133,11 @@ We can now click **"Deploy Project"** to ship the code that powers our fitness t
 
 Test the first part of your workflow by texting your Twilio number *"1",* If you set everything correctly, you will receive a text similar to this:
 
-<img src= "https://cdn-images-1.medium.com/max/1600/1*ROZ6E6FpMn9FPAkpfM9pNA.jpeg" width="400">
+<img src= "https://cdn-images-1.medium.com/max/1600/1*ROZ6E6FpMn9FPAkpfM9pNA.jpeg" width="250">
 
 To log notes after completing every exercise, text back the **day, exercise, and notes** you'd like to log. For Example:
 
-<img src= "https://cdn-images-1.medium.com/max/1600/1*_1rOm5rCoKsTTOuYw9hZkQ.png" width="400">
+<img src= "https://cdn-images-1.medium.com/max/1600/1*_1rOm5rCoKsTTOuYw9hZkQ.png" width="250">
 
 When you text back the day, exercise, notes, your notes should successfully log in to your airtable base:
 
