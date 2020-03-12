@@ -1,4 +1,4 @@
-# Build a Fitness Planner + Tracker with Airtable and Twilio
+# 💪🏽Build a Fitness Planner + Tracker with Airtable and Twilio
 
 [<img src="https://deploy.stdlib.com/static/images/deploy.svg" width="192">](https://deploy.stdlib.com/)
 
